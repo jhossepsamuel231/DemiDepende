@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head th:fragment="head">
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/82a228b425.js" crossorigin="anonymous"></script>
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" th:href="@{/}">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" th:href="@{/pedidos/listado}">Pedidos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-fluid" layout:fragment="page-content">
+
+           </div>
+        </div>
+          <script th:src="@{/js/bootstrap.min.js}"></script>
+    </body>
+</html>
